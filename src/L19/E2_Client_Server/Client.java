@@ -1,4 +1,4 @@
-package L19.E2;
+package L19.E2_Client_Server;
 
 import java.io.*;
 import java.net.Socket;
@@ -21,7 +21,7 @@ public class Client {
     }
 
     public static void sendToServer(String text) throws IOException {
-        Socket socket = new Socket("localhost", 80);
+        Socket socket = new Socket("localhost", 3000);
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
         BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
