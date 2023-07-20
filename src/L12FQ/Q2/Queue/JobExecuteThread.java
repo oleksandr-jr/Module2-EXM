@@ -1,9 +1,7 @@
 package L12FQ.Q2.Queue;
 
 class JobExecuteThread extends Thread {
-
     JobQueue jobQueue;
-
     public JobExecuteThread(JobQueue jobQueue) {
         this.jobQueue = jobQueue;
     }

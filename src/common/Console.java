@@ -2,7 +2,6 @@ package common;
 
 public class Console {
 
-
     public static void setColor(String color){
         System.out.print(color);
     }
@@ -10,8 +9,6 @@ public class Console {
     public static void resetColor(){
         System.out.print(color.RESET);
     }
-
-
 
     public static void printSeparator(){
         System.out.println();
@@ -24,7 +21,6 @@ public class Console {
         System.out.println(text);
         Console.resetColor();
     }
-
 
     public static class color {
         // Reset
